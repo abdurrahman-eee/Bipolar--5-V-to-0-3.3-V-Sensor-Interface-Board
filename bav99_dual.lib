@@ -1,0 +1,9 @@
+* Use the vendor diode model for both junctions
+.MODEL DI_BAV99 D ( IS=261p RS=0.140 BV=75.0 IBV=2.50u
++ CJO=1.19p M=0.333 N=1.70 TT=5.76n )
+
+* 3-pin BAV99: A is common anode, K1/K2 are cathodes
+.SUBCKT BAV99_DUAL A K1 K2
+D1 A K1 DI_BAV99
+D2 A K2 DI_BAV99
+.ENDS BAV99_DUAL

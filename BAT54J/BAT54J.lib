@@ -1,0 +1,50 @@
+***********************************************************
+*
+* BAT54J
+*
+* Nexperia
+*
+* Single Schottky barrier diode
+* IFmax = 200mA
+* VRmax = 30V
+* VFmax = 320mV    @ IF = 1mA
+* IRmax = 2µA      @ VR = 25V
+* 
+*
+*
+*
+* Package pinning does not match Spice model pinning.
+* Package: SOD323F
+*
+* Package Pin 1: Cathode
+* Package Pin 2: Anode
+*
+*
+* Extraction date (week/year): #
+* Simulator: SPICE2
+*
+***********************************************************
+*
+* The resistor R1  
+* does not reflect physical devices 
+* but improve only modeling in the 
+* reverse mode of operation.
+*
+.SUBCKT BAT54J 1 2
+D1 1 2 BAT54J
+R1 1 2 3.5E+07 
+* 
+.MODEL BAT54J D 
++ IS = 2.36E-07 
++ N = 1.009 
++ BV = 33 
++ IBV = 0.001 
++ RS = 2.633 
++ CJO = 9.53E-12 
++ VJ = 0.2034 
++ M = 0.3811 
++ FC = 0.6435 
++ EG = 0.69 
++ XTI = 2 
+.ENDS
+*
