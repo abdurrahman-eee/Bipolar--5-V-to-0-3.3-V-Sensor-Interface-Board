@@ -16,11 +16,6 @@ A professional-grade analog signal conditioning circuit designed to interface bi
 
 ### Application Context
 This circuit is essential for systems requiring:
-- Industrial analog sensor interfacing with digital microcontrollers
-- IoT applications with battery-powered operation (TLV series: 600μA typical)
-- Laboratory instrumentation and test equipment
-- SCADA and distributed control systems
-- Data acquisition from legacy analog equipment
 
 ### Design Goals
 ✓ Precise voltage scaling and DC level shifting
@@ -28,6 +23,20 @@ This circuit is essential for systems requiring:
 ✓ Low power consumption for battery-operated systems
 ✓ Comprehensive simulation and verification
 ✓ Production-ready PCB design
+
+## Design Visualization
+
+### Circuit Schematic
+![Schematic Diagram](Image/schemetic.jpg)
+*Schematic: Non-inverting amplifier configuration with DC level shifting using TLV9061/TLV9062 op-amp*
+
+### PCB Layout
+![PCB Layout](Image/PCB.jpg)
+*PCB Layout: Single-layer or dual-layer design with optimized component placement and signal routing*
+
+### PCB 3D Visualization
+![PCB 3D View](Image/PCB-3D.jpg)
+*3D Rendering: Shows component height, layer stackup, and physical assembly overview*
 
 ## Project Structure
 
